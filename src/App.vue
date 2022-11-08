@@ -5,6 +5,7 @@
       <CatalogoAll/>
       <ComponenteAll/>
       <PersonasAll/>
+      <LoginAll/>
     </div>
   </v-app>
 </template>
@@ -14,6 +15,7 @@ import NavbarAll from './components/NavbarAll.vue';
 import CatalogoAll from './components/CatalogoAll.vue';
 import ComponenteAll from './components/ComponenteAll.vue';
 import PersonasAll from './components/PersonasAll.vue';
+import LoginAll from './components/LoginAll.vue';
 
 export default {
   name: 'App',
@@ -22,7 +24,8 @@ export default {
     NavbarAll,
     CatalogoAll,
     ComponenteAll,
-    PersonasAll
+    PersonasAll,
+    LoginAll
   },
 
   data: () => ({
