@@ -411,14 +411,17 @@ ul {
   background: white;
   transition: transform .5s;
   width: 100%;
-  max-width: 400px;
+  max-width: 350px;
   margin: 1rem;
   padding: 30px;
-  display:block;
-  margin: 2rem auto ;
+  margin: 3rem;
   text-decoration:none;
 }
-
+.row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .card:hover{
   transform: scale(1.12);
@@ -430,6 +433,7 @@ ul {
   }
 }
 .info-card  {
+  text-align: center;
   padding: 10px 20px;
 }
 
@@ -441,8 +445,10 @@ ul {
   text-decoration: line-through;
   font-size: 18px;
   margin-top: 10px;
+  text-align: center;
 }
 .info-card .precio span {
+  text-align: center;
   font-weight: 700;
   font-size: 22px;
 }
