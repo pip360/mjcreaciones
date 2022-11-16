@@ -1,14 +1,11 @@
 <template>
-<v-app>
-  <div class="app">
-    <carousel>
-        <carousel-slide v-for="(slide,index) in slides" :key="slide" :index="index"></carousel-slide>
-        <img :src="slide" />
-    </carousel>
-</div>
-</v-app>
-
   <v-app>
+    <div class="app">
+      <carousel>
+          <carousel-slide v-for="(slide,index) in slides" :key="slide" :index="index"></carousel-slide>
+          <img :src="slide" />
+      </carousel>
+  </div>
     <div>
       <NavbarAll />
       <CatalogoAll />
@@ -19,9 +16,10 @@
   </v-app>
 </template>
 
+
 <script>
 import NavbarAll from './components/NavbarAll.vue';
-import Carousel from './components/Carousel.vue'
+import carousel from './components/SliderFotos.vue'
 import CarouselSlide from './components/CarouselSlide.vue'
 import CatalogoAll from './components/CatalogoAll.vue';
 import ComponenteAll from './components/ComponenteAll.vue';
@@ -45,7 +43,7 @@ export default {
 
   components: {
     NavbarAll,
-    Carousel,
+    carousel,
     CarouselSlide,
     CatalogoAll,
     ComponenteAll,
