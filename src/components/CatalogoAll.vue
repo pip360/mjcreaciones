@@ -407,12 +407,26 @@ ul {
   text-align: center;
   border: 1px solid #e1e1e1;
   background: white;
-  width: 300px;
   transition: transform .5s;
-
+  width: 100%;
+  max-width: 400px;
+  margin: 1rem;
+  padding: 30px;
+  display:inline-block;
+  margin: 2rem auto ;
+  text-decoration:none;
 }
+
+
+.menu li{
+ 
+  display:inline-block;
+  text-align: center;
+}
+
 .card:hover{
   transform: scale(1.12);
+  
 }
 @media (min-width: 550px) {
   .card {
