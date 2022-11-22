@@ -1,11 +1,6 @@
 <template>
   <v-app>
-    <div class="app">
-      <carousel>
-          <carousel-slide v-for="(slide,index) in slides" :key="slide" :index="index"></carousel-slide>
-          <img :src="slide" />
-      </carousel>
-  </div>
+
     <div>
       <NavbarAll />
       <CatalogoAll />
@@ -13,6 +8,12 @@
       <PersonasAll />
       <LoginAll />
     </div>
+    <div class="app">
+      <carousel>
+          <carousel-slide v-for="(slide,index) in slides" :key="slide" :index="index"></carousel-slide>
+          <img :src="slide" />
+      </carousel>
+  </div>
   </v-app>
 </template>
 
