@@ -89,31 +89,31 @@
                     <p>Two Babies</p>
                     <img src="../assets/img/estrellas.png">
                     <p class="precio">$90  <span class="u-pull-right ">$30</span></p>
-                    <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                    <button href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</button>
                 </div>
             </div> <!--.card-->
         </div>
         <div class="four columns">
                 <div class="card">
-                    <img src="../assets/img/dino_niña.jpg" class="imagen-curso u-full-width">
+                    <img src="../assets/img/oants.jpg" class="imagen-curso u-full-width">
                     <div class="info-card">
                         <h4>Merry Christmas</h4>
-                        <p>Leñadora</p>
+                        <p>Estilos unicos</p>
                         <img src="../assets/img/estrellas.png">
                         <p class="precio">$120  <span class="u-pull-right ">$40</span></p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Agregar Al Carrito</a>
+                        <button class="u-full-width button-primary button input agregar-carrito" data-id="2">Agregar Al Carrito</button>
                     </div>
                 </div>
         </div>
         <div class="four columns">
                 <div class="card">
-                    <img src="../assets/img/comegalletas.jpg" class="imagen-curso u-full-width">
+                    <img src="../assets/img/pijamadonuts.jpg" class="imagen-curso u-full-width">
                     <div class="info-card">
                         <h4>Merry Christmas</h4>
-                        <p>Red gift</p>
+                        <p>Tu estio,tu vida</p>
                         <img src="../assets/img/estrellas.png">
                         <p class="precio">$100  <span class="u-pull-right ">$30</span></p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Agregar Al Carrito</a>
+                        <button href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Agregar Al Carrito</button>
                     </div>
                 </div> <!--.card-->
         </div>
@@ -124,37 +124,37 @@
     <div class="row">
         <div class="four columns">
             <div class="card">
-                <img src="../assets/img/fnddes.jpg" class="imagen-curso u-full-width">
+                <img src="../assets/img/Short.png" class="imagen-curso u-full-width">
                 <div class="info-card">
-                    <h4>4 Estaciones</h4>
-                    <p>Primavera</p>
+                    <h4>Merry Chrismas</h4>
+                    <p>Diferentes estilos en ceda</p>
                     <img src="../assets/img/estrellas.png">
                     <p class="precio">$90 <span class="u-pull-right ">$75</span></p>
-                    <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="4">Agregar Al Carrito</a>
+                    <button href="#" class="u-full-width button-primary button input agregar-carrito" data-id="4">Agregar Al Carrito</button>
                 </div>
             </div> <!--.card-->
         </div>
         <div class="four columns">
                 <div class="card">
-                    <img src="../assets/img/fndpijama.webp" class="imagen-curso u-full-width">
+                    <img src="../assets/img/pijamauni.jpg" class="imagen-curso u-full-width">
                     <div class="info-card">
                         <h4>4 Estaciones</h4>
                         <p>Otoño</p>
                         <img src="../assets/img/estrellas.png">
                         <p class="precio">$80 <span class="u-pull-right ">$55</span></p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="5">Agregar Al Carrito</a>
+                        <button href="#" class="u-full-width button-primary button input agregar-carrito" data-id="5">Agregar Al Carrito</button>
                     </div>
                 </div> <!--.card-->
         </div>
         <div class="four columns">
                 <div class="card">
-                    <img src="../assets/img/fond.jpg" class="imagen-curso u-full-width">
+                    <img src="../assets/img/pijamaelmo.jpg" class="imagen-curso u-full-width">
                     <div class="info-card">
                         <h4>4 Estaciones</h4>
                         <p>Verano</p> 
                         <img src="../assets/img/estrellas.png">
                         <p class="precio">$100  <span class="u-pull-right ">90</span></p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="6">Agregar Al Carrito</a>
+                        <button href="#" class="u-full-width button-primary button input agregar-carrito" data-id="6">Agregar Al Carrito</button>
                     </div>
                 </div> <!--.card-->
         </div>
@@ -163,37 +163,37 @@
     <div class="row">
         <div class="four columns">
             <div class="card">
-                <img src="../assets/img/fond2.jpg" class="imagen-curso u-full-width">
+                <img src="../assets/img/magiashort.jpg" class="imagen-curso u-full-width">
                 <div class="info-card">
                     <h4>Community</h4>
                     <p>Pink Cream</p>
                     <img src="../assets/img/estrellas.png">
                     <p class="precio">$45  <span class="u-pull-right ">$30</span></p>
-                    <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="7">Agregar Al Carrito</a>
+                    <button href="#" class="u-full-width button-primary button input agregar-carrito" data-id="7">Agregar Al Carrito</button>
                 </div>
             </div> <!--.card-->
         </div>
         <div class="four columns">
                 <div class="card">
-                    <img src="../assets/img/fond3.jpg" class="imagen-curso u-full-width">
+                    <img src="../assets/img/pijama estampada.jpg" class="imagen-curso u-full-width">
                     <div class="info-card">
                         <h4>Deep</h4>
                         <p>Blue fresh</p>
                         <img src="../assets/img/estrellas.png">
                         <p class="precio">$100 <span class="u-pull-right ">$80</span></p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="8">Agregar Al Carrito</a>
+                        <button href="#" class="u-full-width button-primary button input agregar-carrito" data-id="8">Agregar Al Carrito</button>
                     </div>
                 </div> <!--.card-->
         </div>
         <div class="four columns">
                 <div class="card">
-                    <img src="../assets/img/fondmj.jpg" class="imagen-curso u-full-width">
+                    <img src="../assets/img/popular4.jpg" class="imagen-curso u-full-width">
                     <div class="info-card">
                         <h4>Aquamarine</h4>
                         <p>Lapizlazuli</p>
                         <img src="../assets/img/estrellas.png">
                         <p class="precio">$90 <span class="u-pull-right ">$75</span></p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="9">Agregar Al Carrito</a>
+                        <button href="#" class="u-full-width button-primary button input agregar-carrito" data-id="9">Agregar Al Carrito</button>
                     </div>
                 </div> <!--.card-->
         </div>
@@ -202,13 +202,13 @@
     <div class="row">
             <div class="four columns">
                 <div class="card">
-                    <img src="../assets/img/sandias_mujer.jpg" class="imagen-curso u-full-width">
+                    <img src="../assets/img/pijamaunic.jpg" class="imagen-curso u-full-width">
                     <div class="info-card">
                         <h4>Julio</h4>
                             <p>Leñadora</p>
                         <img src="../assets/img/estrellas.png">
                         <p class="precio">$200  <span class="u-pull-right ">$100</span></p>
-                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="10">Agregar Al Carrito</a>
+                        <button href="#" class="u-full-width button-primary button input agregar-carrito" data-id="10">Agregar Al Carrito</button>
                     </div>
                 </div> <!--.card-->
             </div>
@@ -220,7 +220,7 @@
                             <p>Young girl</p>
                             <img src="../assets/img/estrellas.png">
                             <p class="precio">$90  <span class="u-pull-right ">$50</span></p>
-                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="11">Agregar Al Carrito</a>
+                            <button href="#" class="u-full-width button-primary button input agregar-carrito" data-id="11">Agregar Al Carrito</button>
                         </div>
                     </div> <!--.card-->
             </div>
@@ -232,7 +232,7 @@
                             <p>Black Starts</p>
                             <img src="../assets/img/estrellas.png">
                             <p class="precio">$200  <span class="u-pull-right ">$50</span></p>
-                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="12">Agregar Al Carrito</a>
+                            <button href="#" class="u-full-width button-primary button input agregar-carrito" data-id="12">Agregar Al Carrito</button>
                         </div>
                     </div> <!--.card-->
             </div>
@@ -450,8 +450,18 @@ ul {
 .info-card .precio span {
   text-align: center;
   font-weight: 700;
-  font-size: 22px;
-}
+  font-size: 22px;}
+
+  button{
+    width: 150px;
+    background-color: #00c5f1;
+    padding: auto;
+    height: 50px;
+    border-radius: 1rem;
+    color: white;
+    font-size: medium;
+  }
+
 
 
 
