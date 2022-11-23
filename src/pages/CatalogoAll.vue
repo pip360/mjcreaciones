@@ -1,34 +1,34 @@
 <template>
 <div ><!-- //INICIO -->
   <header id="header" class="header">
-      <div class="container">
+    <div class="container">
         <div class="row">
             <div class="four columns">
-                <img src="../assets/img/logo.jpg.png" id="logo">
+                <img src="../assets/img/logoCMJ.png" id="logo">
             </div>
             <div class="two columns u-pull-right">
                 <ul>
                     <li class="submenu">
-                            <img src="../assets/img/cart.png" id="img-carrito">
+                            <img src="../assets/img/cartshop.png" id="img-carrito">
                             <div id="carrito">
-                              
-                              <table id="lista-carrito" class="u-full-width">
-                                <thead>
-                                    <tr>
-                                        <th>Imagen</th>
-                                        <th>Nombre</th>
-                                        <th>Precio</th>
-                                        <th>Cantidad</th>
-                                        <th>Total</th>
-                                    </tr>
                                     
-                                </thead>
-                                <tbody></tbody>
-                                <thead style="font-weight: bolder">
-                                   
-                                </thead>
-                                
-                            </table>
+                                    <table id="lista-carrito" class="u-full-width">
+                                        <thead>
+                                            <tr>
+                                                <th>Imagen</th>
+                                                <th>Nombre</th>
+                                                <th>Precio</th>
+                                                <th>Cantidad</th>
+                                                <th>Total</th>
+                                            </tr>
+                                            
+                                        </thead>
+                                        <tbody></tbody>
+                                        <thead style="font-weight: bolder">
+                                           
+                                        </thead>
+                                        
+                                    </table>
 
                                     <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
                             </div>
@@ -36,45 +36,46 @@
                 </ul>
             </div>
         </div> 
-      </div>
+    </div>
     </header>
 
-  <div id="hero">
-    <div class="container">
-        <div class="row">
-                <div class="six columns">
-                    <div class="contenido-hero">
-                            <h2>¿Que estas buscando?</h2>
-                            <form action="#" id="busqueda" method="post" class="formulario">
-                                <input class="u-full-width" type="text" placeholder="¿Calido o fresco?, busca aquí tu prenda..." id="buscador">
-                                <input type="submit" id="submit-buscador" class="submit-buscador">
-                            </form>
+
+    <div id="hero">
+        <div class="container">
+            <div class="row">
+                    <div class="six-columns">
+                        <div class="contenido-hero">
+                                <h2>CREACIONES MARIA JOSE</h2>
+                                <form action="#" id="busqueda" method="post" class="formulario">
+                                    <input class="u-full-width" type="text" placeholder="¿Qué deseas buscar?" id="buscador">
+                                    <input type="submit" id="submit-buscador" class="submit-buscador">
+                                </form>
+                        </div>
                     </div>
-                </div>
-        </div> 
-    </div>
-</div>
-
-
-  <div class="barra">
-    <div class="container">
-        <div class="row">
-                <div class="four columns icono icono1">
-                    <p>1.000 tipos de prendas femeninas <br>
-                    Explora  los temas más recientes</p>
-                </div>
-                <div class="four columns icono icono2">
-                    <p>Has tu propia prenda<br>
-                    Aprende con distintos estilos</p>
-                </div>
-                <div class="four columns icono icono3">
-                    <p>Acceso de por vida <br>
-                    Realiza tus pedidos sin limite y a buen precio</p>
-                </div>
+            </div> 
         </div>
     </div>
 
-</div>
+    <div class="barra">
+        <div class="container">
+            <div class="row">
+                    <div class="four columns icono icono1">
+                        <p>¡Belleza también es <br>
+                            comodidad!</p>
+                    </div>
+                    <div class="four columns icono icono2">
+                        <p>Haz tus pedidos en linea<br>
+                            ¡Ahora mismo!</p>
+                    </div>
+                    <div class="four columns icono icono3">
+                        <p>Explora toda nuestra <br>
+                        variedad de <br>
+                        estilos</p>
+                    </div>
+            </div>
+        </div>
+
+    </div>
 
 <div id="lista-cursos" class="container">
   <h1 id="encabezado" class="encabezado">Catálogo</h1>
@@ -243,7 +244,121 @@
 <script>
   export default {
     mounted(){
-        
+      const carrito = document.querySelector('#carrito');
+const contenedorCarrito = document.querySelector('#lista-carrito tbody');
+const totalCarrito = document.querySelectorAll('#lista-carrito thead');
+const vaciarCarritoBoton = document.querySelector('#vaciar-carrito');
+const liProductos = document.querySelector('#lista-cursos ');
+//esto es un array
+console.log(totalCarrito);
+let articuloCarrito = [];
+let totalPedido= 0;
+cargarEvento();
+
+function cargarEvento(){
+    liProductos.addEventListener('click',agregarProductos);
+    //para vaciar carrito
+    vaciarCarritoBoton.addEventListener('click',vaciarProductos);
+    function vaciarProductos(){
+        console.log("boton funciona");
+        articuloCarrito=[];
+        limpiarHtml();
+        limpiarHtmlTotal();
+    }
+    carrito.addEventListener('click', eliminarProducto)
+}
+
+function agregarProductos(e){
+    e.preventDefault();
+    if (e.target.classList.contains('agregar-carrito')){
+        const productoSeleccionado = e.target.parentElement.parentElement
+        leerDatos(productoSeleccionado)
+
+    }
+    
+}
+
+function leerDatos(productos){
+    const infoProductos={
+        imagen: productos.querySelector('img').src,
+        titulo: productos.querySelector('h4').textContent,
+        precio: productos.querySelector('.precio span').textContent,
+        cantidad: 1,
+        total: parseInt (productos.querySelector('.precio span').textContent.substr(1,productos.querySelector('.precio span').textContent.length)),
+        id: productos.querySelector('a').getAttribute('data-id')
+    }
+    console.log(infoProductos)
+    const existe = articuloCarrito.some(producto => producto.id === infoProductos.id);
+    console.log("existe", existe)
+    //validar si existe
+    if(existe){
+        articuloCarrito.map(producto =>{
+            if(producto.id === infoProductos.id){
+                console.log("cantidad de texto", producto.precio.length);
+                producto.cantidad++;
+                producto.total = + producto.cantidad *  parseInt(producto.precio.substr(1,producto.precio.length));
+            
+                return producto;
+            }else{
+                
+                return producto;
+            }
+        })
+           
+    }else{
+        articuloCarrito = [...articuloCarrito,infoProductos];
+    } 
+    
+    llenarCarritoHTML()
+}
+
+function eliminarProducto(e) {
+    e.preventDefault();
+    if(e.target.classList.contains('borrar-curso')) {
+        const cursoId = e.target.getAttribute('data-id')
+
+        articuloCarrito = articuloCarrito.filter(curso => curso.id !== cursoId)
+        llenarCarritoHTML();
+    }
+}
+
+function llenarCarritoHTML(){
+    //borrar el html del contenedor
+    limpiarHtml();
+    limpiarHtmlTotal();
+    totalPedido = 0;
+    articuloCarrito.forEach(producto =>{
+        const fila = document.createElement('tr');
+        fila.innerHTML = `
+        <td> <img src=${producto.imagen} width="90" </td>
+        <td> ${producto.titulo} </td>
+        <td> ${producto.precio} </td>
+        <td> ${producto.cantidad} </td>
+        <td> ${producto.total} </td>
+        <td> <a href= "#" class="borrar-curso" data-id=${producto.id}> x </a> </td>
+        `;
+        console.log('producto.total',producto.total)
+        totalPedido = totalPedido + parseInt(producto.total);
+        const filatotal = document.createElement('tr');
+        filatotal.innerHTML = `
+        <td>Total Pedido:  $${totalPedido}</td>
+        `;
+
+        contenedorCarrito.appendChild(fila);
+        limpiarHtmlTotal();
+        totalCarrito[1].appendChild(filatotal);
+    })
+   
+}
+
+
+function limpiarHtml(){
+    contenedorCarrito.innerHTML='';
+}
+
+function limpiarHtmlTotal(){
+    totalCarrito[1].innerHTML='';
+}
     }
   }
 </script>
