@@ -38,6 +38,16 @@
         </div> 
     </div>
     </header>
+<div>
+  <div class="app">
+    <SliderFotos @next="next"
+     @prev="prev">
+      <CarouselSlide v-for="slide in slides" :key="slide" class="carousel-slider">
+        <img :src="slide" :alt="slide" />
+      </CarouselSlide>
+    </SliderFotos>
+  </div>
+</div>
 
 
     <div id="hero">
@@ -242,7 +252,28 @@
   
 
 <script>
+import SliderFotos from '../components/SliderFotos.vue';
+import CarouselSlide from '../components/CarouselSlide.vue';
+
   export default {
+    data() {
+        return {
+            slides: [
+                'https://picsum.photos/id/237/600/350',
+                'https://picsum.photos/id/236/600/350',
+                'https://picsum.photos/id/235/600/350',
+                'https://picsum.photos/id/234/600/350',
+                'https://picsum.photos/id/233/600/350',
+                'https://picsum.photos/id/232/600/350',
+            ],
+            visibleSlide: 0,
+        }
+    },
+
+  components: {
+    SliderFotos,
+    CarouselSlide,
+  },
     mounted(){
       const carrito = document.querySelector('#carrito');
 const contenedorCarrito = document.querySelector('#lista-carrito tbody');

@@ -4,14 +4,7 @@
       <NavbarAll/>
       <router-view></router-view>
     </div>
-    <div class="app">
-      <SliderFotos @next="next"
-       @prev="prev">
-        <carousel-slide v-for="slide in slides" :key="slide" class="carousel-slider">
-          <img :src="slide" :alt="slide" />
-        </carousel-slide>
-      </SliderFotos>
-    </div>
+
      
       
   
@@ -21,29 +14,18 @@
 
 <script>
 import NavbarAll from './components/NavbarAll.vue';
-import SliderFotos from './components/SliderFotos.vue';
-import CarouselSlide from './components/CarouselSlide.vue';
+
 
 
 export default {
     data() {
         return {
-            slides: [
-                'https://picsum.photos/id/237/600/350',
-                'https://picsum.photos/id/236/600/350',
-                'https://picsum.photos/id/235/600/350',
-                'https://picsum.photos/id/234/600/350',
-                'https://picsum.photos/id/233/600/350',
-                'https://picsum.photos/id/232/600/350',
-            ],
-            visibleSlide: 0,
+            
         }
     },
 
   components: {
-    NavbarAll,
-    SliderFotos,
-    CarouselSlide,
+    NavbarAll
   },
 }
 //   data: () => ({
