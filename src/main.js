@@ -1,10 +1,18 @@
-import Vue from 'vue'
-import App from './App.vue'
-import vuetify from './plugins/vuetify'
+import Vue from 'vue';
+import App from './App.vue';
+import vuetify from './plugins/vuetify';
+import {routes} from './routes';
+import VueRouter from 'vue-router';
+
+Vue.use(VueRouter);
+const router = new VueRouter({
+  routes
+})
 
 Vue.config.productionTip = false
 
-new Vue({
+new Vue ({
   vuetify,
-  render: h => h(App)
-}).$mount('#app')
+  render: h => h(App),
+  router
+}).$mount('#app');
