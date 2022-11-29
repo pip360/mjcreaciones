@@ -7,8 +7,8 @@
                 <img src="../assets/img/logoCMJ.png" id="logo">
             </div>
             <div class="two columns u-pull-right">
-                <ul>
-                    <li class="submenu">
+                
+                    <div class="submenu">
                             <img src="../assets/img/cartshop.png" id="img-carrito">
                             <div id="carrito">
                                     
@@ -32,23 +32,12 @@
 
                                     <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
                             </div>
-                    </li>
-                </ul>
+                          </div>
+                
             </div>
         </div> 
     </div>
     </header>
-<div>
-  <div class="app">
-    <SliderFotos @next="next"
-     @prev="prev">
-      <CarouselSlide v-for="slide in slides" :key="slide" class="carousel-slider">
-        <img :src="slide" :alt="slide" />
-      </CarouselSlide>
-    </SliderFotos>
-  </div>
-</div>
-
 
     <div id="hero">
         <div class="container">
@@ -86,7 +75,16 @@
         </div>
 
     </div>
-
+    <div>
+      <div class="app">
+        <SliderFotos @next="next"
+         @prev="prev">
+          <CarouselSlide v-for="slide in slides" :key="slide" class="carousel-slider">
+            <img :src="slide" :alt="slide" />
+          </CarouselSlide>
+        </SliderFotos>
+      </div>
+    </div>
 <div id="lista-cursos" class="container">
   <h1 id="encabezado" class="encabezado">Catálogo</h1>
   <div class="row">
@@ -259,7 +257,7 @@ import CarouselSlide from '../components/CarouselSlide.vue';
     data() {
         return {
             slides: [
-                'https://picsum.photos/id/237/600/350',
+                'https://nerako.co/wp-content/uploads/2022/10/AGOSTO-PANOLETAS-OCTUBRE-2.webp',
                 'https://picsum.photos/id/236/600/350',
                 'https://picsum.photos/id/235/600/350',
                 'https://picsum.photos/id/234/600/350',
@@ -306,7 +304,6 @@ function agregarProductos(e){
         leerDatos(productoSeleccionado)
 
     }
-    
 }
 
 function leerDatos(productos){
