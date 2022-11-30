@@ -35,6 +35,30 @@ export default {
 </script>
 
 <style>
+.slider{
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  animation: cambio 10s infinite
+  alternate linear;
+  list-style: none;
+  
+}
+@keyframes cambio{
+  0%{margin-left: 0;}
+  20%{margin-left: 0;}
+
+  25%{margin-left: -100;}
+  45%{margin-left: -100;}
+
+  50%{margin-left: -200;}
+  70%{margin-left: -200;}
+
+  75%{margin-left: -300;}
+  100%{margin-left: -300;}
+}
+
+
 .app {
   display: flex;
   justify-content: center;

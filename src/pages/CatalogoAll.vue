@@ -39,6 +39,18 @@
     </div>
     </header>
 
+
+    <!-- Lista de clases -->
+    <div>
+      <ul class="menu" >         
+          <li><a href="#"> Colecciones </a></li>
+          <li><a href="#"> Pijamas para niña </a></li>
+          <li><a href="#"> Pijamas mujer </a></li>
+          <li><a href="#"> Tela comes </a></li>
+          <li><a href="#"> Tela tragas </a></li>
+      </ul>
+  </div>
+
     <div id="hero">
         <div class="container">
             <div class="row">
@@ -76,7 +88,9 @@
 
     </div>
     <div>
-      <div class="app">
+
+      <!-- Slider de fotos -->
+      <div class="slider">
         <SliderFotos @next="next"
          @prev="prev">
           <CarouselSlide v-for="slide in slides" :key="slide" class="carousel-slider">
@@ -85,6 +99,8 @@
         </SliderFotos>
       </div>
     </div>
+
+
 <div id="lista-cursos" class="container">
   <h1 id="encabezado" class="encabezado">Catálogo</h1>
   <div class="row">
@@ -420,6 +436,44 @@ header {
       text-align: left;
   }
 }
+
+/* Lista */
+.menu{
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  background: white;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+.menu li a{
+
+  text-decoration:none;
+  color: black;
+  padding: 10px 30px ;
+  display: block;
+}
+.menu li{
+ 
+  display:inline-block;
+  text-align: center;
+}
+.menu li a:hover{
+  
+  background: lightpink;
+}
+
+
+.borrar-curso {
+  background-color: lightblue;
+  border-radius: 50%;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
 
 .borrar-curso {
   background-color: #e69ded;
