@@ -6,7 +6,7 @@
 
     <!-- Icon -->
     <div class="fadeIn first">
-      <img src="@/assets/Logosalvato.png" id="icon" alt="User Icon" />
+      <img src="../assets/img/logo.jpg" id="icon" alt="User Icon" />
     </div>
 
     <!-- Login Form -->
@@ -63,7 +63,7 @@ export default {
       
         /* store.dispatch("addPersona", persona);
         router.push('/print') */
-        axios.get('https://databasejaa-default-rtdb.firebaseio.com/persona.json')
+        axios.get('https://creaciones-maria-jose-default-rtdb.firebaseio.com/persona.json')
         .then(res=>{
           console.log(res);
           console.log(nombre.value,"Nombre")

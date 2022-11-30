@@ -29,18 +29,25 @@
           <v-list-item-title>Home</v-list-item-title>
         </v-list-item>
 
-        <v-list-item  :to="'/singup'">
+        <!-- <v-list-item  :to="'/singup'">
           <v-list-item-icon>
             <v-icon>mdi-login</v-icon>
           </v-list-item-icon>
           <v-list-item-title>Iniciar Sesion</v-list-item-title>
-        </v-list-item>
+        </v-list-item> -->
 
         <v-list-item  :to="'/formulario'">
           <v-list-item-icon>
             <v-icon>mdi-login</v-icon>
           </v-list-item-icon>
           <v-list-item-title>Formulario</v-list-item-title>
+        </v-list-item>
+
+        <v-list-item  :to="'/iniciosesion'">
+          <v-list-item-icon>
+            <v-icon>mdi-account</v-icon>
+          </v-list-item-icon>
+          <v-list-item-title>Inicio de Sesion</v-list-item-title>
         </v-list-item>
 
         <v-list-item>
