@@ -17,7 +17,7 @@
         <div class="form-group">
           <label for="formGroupExampleInput2">Contraseña</label>
           <input
-            v-model="email"
+            v-model="password"
             type="text"
             class="form-control"
             placeholder="*********"
@@ -37,22 +37,20 @@
 /* eslint-disable*/
 import {ref} from 'vue'
 /* import {useStore} from 'vuex' */
-import {useRouter} from 'vue-router'
+/* import {useRouter} from 'vue-router' */
 import axios from 'axios'
 export default {
   setup(){
-    const store = useStore()
-    const router = useRouter()
-    const nombre = ref("")
+    
+    const password = ref("")
     const email = ref("")
-    const aporte = ref("")
+    
     
     function addPersona(){
-      if(nombre.value != '' && email.value != ""){
+      if(email.value != '' && password.value != ""){
         const persona = {
-          nombre:nombre.value,
           email:email.value,
-          aporte:aporte.value
+          password:password.value,
         }
        /*  store.dispatch("addPersona", persona);
         router.push('/print') */
@@ -63,7 +61,7 @@ export default {
       }
     }
 
-    return{nombre, email, aporte, addPersona}
+    return{email, password,addPersona}
   }
   // data() {
   //   return {

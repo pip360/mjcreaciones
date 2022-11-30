@@ -5,8 +5,8 @@
     <!-- Tabs Titles -->
 
     <!-- Icon -->
-    <div class="fadeIn first">
-      <img src="../assets/img/logo.jpg" id="icon" alt="User Icon" />
+    <div class="fadeIn-first">
+      <img src="../assets/img/logoCMJ.png" id="icon" alt="User Icon" />
     </div>
 
     <!-- Login Form -->
@@ -214,17 +214,17 @@ h2.active {
 /* FORM TYPOGRAPHY*/
 
 input[type=button], input[type=submit], input[type=reset]  {
-  background-color: #56baed;
+  
   border: none;
   color: white;
   padding: 15px 80px;
   text-align: center;
   text-decoration: none;
+  -webkit-box-shadow: 0 10px 30px 0 rgba(185, 90, 230, 0.534);
+  box-shadow: 0 10px 30px 0 rgba(185, 90, 230, 0.534);
   display: inline-block;
   text-transform: uppercase;
   font-size: 13px;
-  -webkit-box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
-  box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
   -webkit-border-radius: 5px 5px 5px 5px;
   border-radius: 5px 5px 5px 5px;
   margin: 5px 20px 40px 20px;
@@ -236,7 +236,7 @@ input[type=button], input[type=submit], input[type=reset]  {
 }
 
 input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover  {
-  background-color: #39ace7;
+  background-color: #f78cee;
 }
 
 input[type=button]:active, input[type=submit]:active, input[type=reset]:active  {
@@ -366,7 +366,7 @@ input[type=password]:placeholder {
   animation-duration:1s;
 }
 
-.fadeIn.first {
+.fadeIn-first {
   -webkit-animation-delay: 0.4s;
   -moz-animation-delay: 0.4s;
   animation-delay: 0.4s;
@@ -419,7 +419,7 @@ input[type=password]:placeholder {
 } 
 
 #icon {
-  width:10%;
+  width:60%;
 }
 
 
