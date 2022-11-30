@@ -22,7 +22,7 @@
         v-model="group"
         active-class="#d7b5f7--text text--accent-4"
       >
-        <v-list-item :to="'/home'">
+        <v-list-item :to="'/'">
           <v-list-item-icon>
             <v-icon>mdi-home</v-icon>
           </v-list-item-icon>
@@ -34,6 +34,13 @@
             <v-icon>mdi-login</v-icon>
           </v-list-item-icon>
           <v-list-item-title>Iniciar Sesion</v-list-item-title>
+        </v-list-item>
+
+        <v-list-item  :to="'/formulario'">
+          <v-list-item-icon>
+            <v-icon>mdi-login</v-icon>
+          </v-list-item-icon>
+          <v-list-item-title>Formulario</v-list-item-title>
         </v-list-item>
 
         <v-list-item>
