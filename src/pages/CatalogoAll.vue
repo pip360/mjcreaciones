@@ -46,26 +46,12 @@
           <li><a href="#"> Colecciones </a></li>
           <li><a href="#"> Pijamas para niña </a></li>
           <li><a href="#"> Pijamas mujer </a></li>
-          <li><a href="#"> Tela comes </a></li>
-          <li><a href="#"> Tela tragas </a></li>
       </ul>
   </div>
 
-    <div id="hero">
-        <div class="container">
-            <div class="row">
-                    <div class="six-columns">
-                        <div class="contenido-hero">
-                                <h2>CREACIONES MARIA JOSE</h2>
-                                <form action="#" id="busqueda" method="post" class="formulario">
-                                    <input class="u-full-width" type="text" placeholder="¿Qué deseas buscar?" id="buscador">
-                                    <input type="submit" id="submit-buscador" class="submit-buscador">
-                                </form>
-                        </div>
-                    </div>
-            </div> 
-        </div>
-    </div>
+    <!-- <div>
+      <SliderAll></SliderAll>
+    </div> -->
 
     <div class="barra">
         <div class="container">
@@ -90,14 +76,14 @@
     <div>
 
       <!-- Slider de fotos -->
-      <div class="slider">
+     <!--  <div class="slider">
         <SliderFotos @next="next"
          @prev="prev">
           <CarouselSlide v-for="slide in slides" :key="slide" class="carousel-slider">
             <img :src="slide" :alt="slide" />
           </CarouselSlide>
         </SliderFotos>
-      </div>
+      </div> -->
     </div>
 
 
@@ -259,6 +245,10 @@
           
       </div>
       </div> <!--.row-->
+
+     <div>
+      <FooterAll></FooterAll>
+     </div> 
 </div>  
 
 
@@ -266,8 +256,11 @@
   
 
 <script>
-import SliderFotos from '../components/SliderFotos.vue';
-import CarouselSlide from '../components/CarouselSlide.vue';
+import FooterAll from '../components/FooterAll.vue'
+/* import SliderAll from '../components/SliderAll.vue' */
+
+/* import SliderFotos from '../components/SliderFotos.vue';
+import CarouselSlide from '../components/CarouselSlide.vue'; */
 
   export default {
     data() {
@@ -285,8 +278,10 @@ import CarouselSlide from '../components/CarouselSlide.vue';
     },
 
   components: {
-    SliderFotos,
-    CarouselSlide,
+    /* SliderFotos,
+    CarouselSlide, */
+    FooterAll,
+    /* SliderAll */
   },
     mounted(){
       const carrito = document.querySelector('#carrito');
