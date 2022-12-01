@@ -48,10 +48,10 @@
           <li><a href="#"> Pijamas mujer </a></li>
       </ul>
   </div>
-
-    <!-- <div>
-      <SliderAll></SliderAll>
-    </div> -->
+  <div>
+    <SliderAll></SliderAll>
+  </div>
+    
 
     <div class="barra">
         <div class="container">
@@ -257,7 +257,7 @@
 
 <script>
 import FooterAll from '../components/FooterAll.vue'
-/* import SliderAll from '../components/SliderAll.vue' */
+import SliderAll from '../components/SliderAll.vue'
 
 /* import SliderFotos from '../components/SliderFotos.vue';
 import CarouselSlide from '../components/CarouselSlide.vue'; */
@@ -281,7 +281,7 @@ import CarouselSlide from '../components/CarouselSlide.vue'; */
     /* SliderFotos,
     CarouselSlide, */
     FooterAll,
-    /* SliderAll */
+    SliderAll
   },
     mounted(){
       const carrito = document.querySelector('#carrito');
