@@ -29,6 +29,13 @@
           <v-list-item-title>Home</v-list-item-title>
         </v-list-item>
 
+        <v-list-item :to="'/añadir'">
+          <v-list-item-icon>
+            <v-icon>mdi-account</v-icon>
+          </v-list-item-icon>
+          <v-list-item-title>Registrar Clientes</v-list-item-title>
+        </v-list-item>
+
         <!-- <v-list-item  :to="'/singup'">
           <v-list-item-icon>
             <v-icon>mdi-login</v-icon>
