@@ -1,4 +1,4 @@
-import FormData from './pages/FormProductos.vue'
+/* import FormData from './pages/FormProductos.vue'
 import PrintData from './pages/ProductosData.vue'
 import Details from './pages/DetailsProducto.vue'
 
@@ -8,14 +8,18 @@ import PersonalData from './pages/PersonalData.vue'
 
 import RegisLog from './pages/FormLogin.vue'
 
+import LoginAll from './pages/LoginAll.vue'  */
+
 import home from './pages/HomeAll.vue'
-import formulario from './pages/FormData.vue'
-import añadir from './pages/AñadirAll.vue'
+/* import formulario from './pages/FormData.vue'
+import añadir from './pages/AñadirAll.vue' 
+ */
+import singin from './pages/FormData.vue'
 
 
 export const routes = [
 
-    {path:'/prod', component:FormData},
+/*     {path:'/prod', component:FormData},
     {path:'/print', component:PrintData},
     {path:'/detailsprodu', component:Details},
 
@@ -23,13 +27,15 @@ export const routes = [
     {path:'/persoData', component:PersonalData},
     {path:'/detailso', component:DetailsPerso},
 
-
-    {path:'/regislog', component:RegisLog},
+    {path:'/log', component:LoginAll}, 
+    {path:'/regislog', component:RegisLog}, */
 
     {path:'/',component:home},
-    {path:'/formulario',component:formulario},
-    {path:'/añadir',component:añadir},
+    /* {path:'/formulario',component:formulario},
+    {path:'/añadir',component:añadir}, */ 
+    {path:'/singin',component:singin},
 
+    
     
 
 ]

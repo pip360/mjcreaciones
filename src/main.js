@@ -4,10 +4,16 @@ import vuetify from './plugins/vuetify';
 import {routes} from './routes';
 import VueRouter from 'vue-router';
 
+
+/* import { createApp } from 'vue'
+import {createRouter, createWebHistory} from 'vue-router'
+import {store} from './store/index' */
+
 Vue.use(VueRouter);
 
 const router = new VueRouter({
-  routes
+  routes,
+ /*  history:createWebHistory() */
 })
 
 Vue.config.productionTip = false
@@ -17,3 +23,7 @@ new Vue ({
   render: h => h(App),
   router
 }).$mount('#app');
+
+/* const app = createApp(App)
+app.use(router)
+app.use(store) */

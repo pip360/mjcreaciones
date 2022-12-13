@@ -36,7 +36,7 @@
           <v-list-item-title>Formulario</v-list-item-title>
         </v-list-item> -->
 
-        <v-list-item :to="'/log'">
+        <!-- <v-list-item :to="'/log'">
           <v-list-item-icon>
             <v-icon>mdi-login</v-icon>
           </v-list-item-icon>
@@ -76,6 +76,15 @@
             <v-icon>mdi-home</v-icon>
           </v-list-item-icon>
           <v-list-item-title>Personal</v-list-item-title>
+        </v-list-item> -->
+
+          <v-list-item :to="'/singin'">
+            <v-list-item-icon>
+              <v-icon>mdi-home</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>Inicio de Sesion</v-list-item-title>
+          </v-list-item>
+          
 
           <!-- <v-list-item :to="'/detailsprodu'">
             <v-list-item-icon>
@@ -83,7 +92,7 @@
             </v-list-item-icon>
             <v-list-item-title>Formulario Productos</v-list-item-title>
           </v-list-item> -->
-        </v-list-item>
+        
 
       </v-list-item-group>
     </v-list>

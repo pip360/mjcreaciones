@@ -19,8 +19,8 @@
 </template>
 
 <script>
-/* import {computed} from 'vue' */
-/* import {useStore} from 'vuex' */
+/* import {computed} from 'vue' 
+import {useStore} from 'vuex'  */
 import {useRoute} from 'vue-router'
 import {ref} from 'vue'
 import axios from 'axios'

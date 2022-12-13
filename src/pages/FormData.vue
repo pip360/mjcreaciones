@@ -36,8 +36,8 @@
 <script>
 /* eslint-disable*/
 import {ref} from 'vue'
-/* import {useStore} from 'vuex' */
-/* import {useRouter} from 'vue-router' */
+/* import {useStore} from 'vuex'
+import {useRouter} from 'vue-router' */
 import axios from 'axios'
 export default {
   setup(){
