@@ -15,29 +15,28 @@
       <div v-else class="alert alert-danger" role="alert">
         No hay datos disponibles
       </div>
-      <router-link to="/print" class="btn btn-primary mt-3">Volver</router-link>
+      <router-link to="/persoData" class="btn btn-primary mt-3">Volver</router-link>
     </div>
   </template>
   
   <script>
- /*  import {computed} from 'vue'
-  import {useStore} from 'vuex' */
+  /* import {computed} from 'vue' */
+  /* import {useStore} from 'vuex' */
   import {useRoute} from 'vue-router'
-  import {ref} from 'vue'
   import axios from 'axios'
+  import {ref} from 'vue'
+
   
   export default {
-
     setup(){
-      
       /* const store = useStore() */
       const route = useRoute()
       const personal = ref("")
-  
       /* const persona = computed(()=>{ */
         const index = route.params.index;
-      /* return store.getters.getPersona(index);
-    }) */
+        /* return store.getters.getPersona(index);
+      }) */
+  
       axios.get('https://creaciones-maria-jose-default-rtdb.firebaseio.com/personal/'+index+'.json')
       .then(res => {
         console.log(res)
