@@ -36,7 +36,7 @@
             placeholder="$0000"
           />
         </div>
-        <button class="btn btn-primary" @click="addPersona">
+        <button class="btn btn-primary" @click="addProductos">
           A&ntilde;adir
         </button>
       </div>
@@ -46,33 +46,38 @@
 
 
 <script>
-/*eslint-disable*/
+/* eslint-disable*/
 import {ref} from 'vue'
-/* import {useStore} from 'vuex' */
-import {useRouter} from 'vue-router'
+/* import {useStore} from 'vuex'
+import {useRouter} from 'vue-router' */
 import axios from 'axios'
 export default {
   setup(){
-    const store = useStore()
-    const router = useRouter()
-    const nombre = ref("")
+    
     const codigo = ref("")
+    const nombre = ref("")
     const precio = ref("")
     
-    function addPersona(){
-      if(nombre.value != '' && codigo.value != "" && precio.value != ""){
-        const persona = {
+    
+    
+    function addProductos(){
+      if(nombre.value != "" && codigo.value != "" && precio.value != ""){
+        const productos = {
           nombre:nombre.value,
           codigo:codigo.value,
-          precio:precio.value
+          precio:precio.value,
+          
         }
-        axios.post('https://creaciones-maria-jose-default-rtdb.firebaseio.com/producto.json',persona)
+       /*  store.dispatch("addPersona", persona);
+        router.push('/print') */
+        axios.post('https://creaciones-maria-jose-default-rtdb.firebaseio.com/productos.json',productos)
+      
         .then(res => console.log(res))
         .catch(error => console.log(error))
       }
     }
 
-    return{nombre,codigo, precio, addPersona}
+    return{nombre,codigo,precio,addProductos}
   }
 };
 </script>

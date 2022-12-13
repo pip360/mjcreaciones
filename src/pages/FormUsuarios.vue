@@ -9,7 +9,7 @@
           <div class="form-group">
             <label for="formGroupExampleInput">E-Mail</label>
             <input
-              v-model="nombreusuario"
+              v-model="usuario"
               type="text"
               class="form-control"
               placeholder="Armando Casas"
@@ -18,7 +18,7 @@
           <div class="form-group">
             <label for="formGroupExampleInput2">Contraseña</label>
             <input
-              v-model="contra"
+              v-model="password"
               type="text"
               class="form-control"
               placeholder="aagudelo@email.com"
@@ -34,53 +34,34 @@
   
   
   <script>
-  /*eslint-disable*/
+  /* eslint-disable*/
   import {ref} from 'vue'
-  /* import {useStore} from 'vuex'  */
-  import {useRouter} from 'vue-router'
+  /* import {useStore} from 'vuex'
+  import {useRouter} from 'vue-router' */
   import axios from 'axios'
   export default {
     setup(){
-      const store = useStore()
-      const router = useRouter()
-      const nombreusuario = ref("")
-      const contra = ref("")
+      
+      const usuario = ref("")
+      const password = ref("")
+      
       
       function addPersonal(){
-        if(nombreusuario.value != '' && contra.value != ""){
+        if(usuario.value != '' && password.value != ""){
           const personal = {
-            nombreusuario:nombreusuario.value,
-            contra:contra.value
+            usuario:usuario.value,
+            password:password.value,
           }
-          /* store.dispatch("addPersona", persona);
+         /*  store.dispatch("addPersona", persona);
           router.push('/print') */
-          axios.post('https://creaciones-maria-jose-default-rtdb.firebaseio.com/persona.json',personal)
+          axios.post('https://creaciones-maria-jose-default-rtdb.firebaseio.com/personal.json',personal)
+        
           .then(res => console.log(res))
           .catch(error => console.log(error))
         }
       }
   
-      return{nombreusuario, contra, addPersonal}
+      return{usuario, password,addPersonal}
     }
-    // data() {
-    //   return {
-    //     nombre: "",
-    //     email: "",
-    //     aporte: "",
-    //   };
-    // },
-    // methods: {
-    //   addPersona() {
-    //     if (this.nombre != "" && this.email != "") {
-    //       const persona = {
-    //         nombre: this.nombre,
-    //         email: this.email,
-    //         aporte: this.aporte,
-    //       };
-    //       this.$store.dispatch("addPersona", persona);
-    //       this.$router.push('/print')
-    //     }
-    //   },
-    // },
   };
   </script>

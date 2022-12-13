@@ -43,32 +43,11 @@
           <v-list-item-title>Login (pendiente)</v-list-item-title>
         </v-list-item>
 
-        <v-list-item :to="'/regislog'">
-          <v-list-item-icon>
-            <v-icon>mdi-login</v-icon>
-          </v-list-item-icon>
-          <v-list-item-title>Registro Usuarios</v-list-item-title>
-        </v-list-item>
-
-        <v-list-item :to="'/prod'">
-          <v-list-item-icon>
-            <v-icon>mdi-home</v-icon>
-          </v-list-item-icon>
-          <v-list-item-title>Registro Productos</v-list-item-title>
-        </v-list-item>
-
         <v-list-item :to="'/print'">
           <v-list-item-icon>
             <v-icon>mdi-home</v-icon>
           </v-list-item-icon>
           <v-list-item-title>Productos</v-list-item-title>
-        </v-list-item>
-
-        <v-list-item :to="'/personal'">
-          <v-list-item-icon>
-            <v-icon>mdi-home</v-icon>
-          </v-list-item-icon>
-          <v-list-item-title>Registro Personal</v-list-item-title>
         </v-list-item>
 
         <v-list-item :to="'/persoData'">
@@ -78,12 +57,51 @@
           <v-list-item-title>Personal</v-list-item-title>
         </v-list-item> -->
 
+        
+
           <v-list-item :to="'/singin'">
             <v-list-item-icon>
               <v-icon>mdi-home</v-icon>
             </v-list-item-icon>
             <v-list-item-title>Inicio de Sesion</v-list-item-title>
           </v-list-item>
+
+          <v-list-item :to="'/regislog'">
+            <v-list-item-icon>
+              <v-icon>mdi-login</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>Registro Usuarios</v-list-item-title>
+          </v-list-item>
+
+          <v-list-item :to="'/prod'">
+            <v-list-item-icon>
+              <v-icon>mdi-home</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>Registro Productos</v-list-item-title>
+          </v-list-item>
+
+          <v-list-item :to="'/print'">
+            <v-list-item-icon>
+              <v-icon>mdi-login</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>Productos</v-list-item-title>
+          </v-list-item>
+
+          <v-list-item :to="'/personal'">
+            <v-list-item-icon>
+              <v-icon>mdi-home</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>Registro Personal</v-list-item-title>
+          </v-list-item>
+
+          <v-list-item :to="'/persoData'">
+            <v-list-item-icon>
+              <v-icon>mdi-login</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>Personal</v-list-item-title>
+          </v-list-item>
+
+
           
 
           <!-- <v-list-item :to="'/detailsprodu'">

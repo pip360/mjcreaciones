@@ -26,7 +26,7 @@
             id:id,
             nombre: res.data[id].nombre,
             cedula: res.data[id].cedula,
-            mail: res.data[id].email,
+            email: res.data[id].email,
             rol: res.data[id].rol,
           })
         }
