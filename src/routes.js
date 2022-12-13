@@ -1,19 +1,35 @@
-import home from './pages/CatalogoAll.vue'
-/* import singup from './pages/SingupAll.vue' */
-import formulario from './pages/FormData.vue'
-import iniciosesion from './pages/LoginRegistro.vue'
-import añadir from './pages/AñadirAll.vue'
-import detalles from './pages/DetallesAll.vue'
-import print from './pages/PrintAll.vue'
+import FormData from './pages/FormProductos.vue'
+import PrintData from './pages/ProductosData.vue'
+import Details from './pages/DetailsProducto.vue'
 
+import personal from './pages/FormPersonal.vue'
+import DetailsPerso from './pages/DetailsPersonal.vue'
+import PersonalData from './pages/PersonalData.vue'
+
+import RegisLog from './pages/FormLogin.vue'
+
+import home from './pages/HomeAll.vue'
+import formulario from './pages/FormData.vue'
+import añadir from './pages/AñadirAll.vue'
 
 
 export const routes = [
+
+    {path:'/prod', component:FormData},
+    {path:'/print', component:PrintData},
+    {path:'/detailsprodu', component:Details},
+
+    {path:'/personal',component:personal},
+    {path:'/persoData', component:PersonalData},
+    {path:'/detailso', component:DetailsPerso},
+
+
+    {path:'/regislog', component:RegisLog},
+
     {path:'/',component:home},
-  /*   {path:'/singup',component:singup}, */
     {path:'/formulario',component:formulario},
-    {path:'/iniciosesion',component:iniciosesion},
     {path:'/añadir',component:añadir},
-    {path:'/detalles',component:detalles},
-    {path:'/print',component:print}
+
+    
+
 ]

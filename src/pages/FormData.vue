@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3>Inicio de sesion</h3>
+    <h3>Formulario</h3>
 
     <div class="card" style="width: 35rem">
       <div class="card-body">

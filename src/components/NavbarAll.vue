@@ -1,12 +1,12 @@
 <template>
 <div>
   <v-app-bar
-    color="#d7b5f7"
+    color="#e69ded"
     dark
   >
     <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
 
-    <v-toolbar-title>CREACIONES MARIA JOSE</v-toolbar-title>
+    
   </v-app-bar>
 
   <v-navigation-drawer
@@ -29,40 +29,62 @@
           <v-list-item-title>Home</v-list-item-title>
         </v-list-item>
 
-        <v-list-item :to="'/añadir'">
-          <v-list-item-icon>
-            <v-icon>mdi-account</v-icon>
-          </v-list-item-icon>
-          <v-list-item-title>Registrar Clientes</v-list-item-title>
-        </v-list-item>
-
-        <!-- <v-list-item  :to="'/singup'">
-          <v-list-item-icon>
-            <v-icon>mdi-login</v-icon>
-          </v-list-item-icon>
-          <v-list-item-title>Iniciar Sesion</v-list-item-title>
-        </v-list-item> -->
-
-        <v-list-item  :to="'/formulario'">
+        <!-- <v-list-item  :to="'/formulario'">
           <v-list-item-icon>
             <v-icon>mdi-login</v-icon>
           </v-list-item-icon>
           <v-list-item-title>Formulario</v-list-item-title>
-        </v-list-item>
+        </v-list-item> -->
 
-        <v-list-item  :to="'/iniciosesion'">
+        <v-list-item :to="'/log'">
           <v-list-item-icon>
-            <v-icon>mdi-account</v-icon>
+            <v-icon>mdi-login</v-icon>
           </v-list-item-icon>
-          <v-list-item-title>Inicio de Sesion</v-list-item-title>
+          <v-list-item-title>Login (pendiente)</v-list-item-title>
         </v-list-item>
 
-        <v-list-item>
+        <v-list-item :to="'/regislog'">
           <v-list-item-icon>
-            <v-icon>mdi-account</v-icon>
+            <v-icon>mdi-login</v-icon>
+          </v-list-item-icon>
+          <v-list-item-title>Registro Usuarios</v-list-item-title>
+        </v-list-item>
+
+        <v-list-item :to="'/prod'">
+          <v-list-item-icon>
+            <v-icon>mdi-home</v-icon>
+          </v-list-item-icon>
+          <v-list-item-title>Registro Productos</v-list-item-title>
+        </v-list-item>
+
+        <v-list-item :to="'/print'">
+          <v-list-item-icon>
+            <v-icon>mdi-home</v-icon>
           </v-list-item-icon>
           <v-list-item-title>Productos</v-list-item-title>
         </v-list-item>
+
+        <v-list-item :to="'/personal'">
+          <v-list-item-icon>
+            <v-icon>mdi-home</v-icon>
+          </v-list-item-icon>
+          <v-list-item-title>Registro Personal</v-list-item-title>
+        </v-list-item>
+
+        <v-list-item :to="'/persoData'">
+          <v-list-item-icon>
+            <v-icon>mdi-home</v-icon>
+          </v-list-item-icon>
+          <v-list-item-title>Personal</v-list-item-title>
+
+          <!-- <v-list-item :to="'/detailsprodu'">
+            <v-list-item-icon>
+              <v-icon>mdi-home</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>Formulario Productos</v-list-item-title>
+          </v-list-item> -->
+        </v-list-item>
+
       </v-list-item-group>
     </v-list>
   </v-navigation-drawer>
@@ -82,7 +104,5 @@
     
     
 <style>
-.v-card{
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+
 </style>

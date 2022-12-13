@@ -14,17 +14,15 @@
       return {
         items: [
           {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg',
+            src: 'https://nerako.co/wp-content/uploads/2022/10/dreamlandmujer2-1.webp',
           },
           {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg',
+            src: 'https://nerako.co/wp-content/uploads/2022/08/fasfwef2211ee.jpg',
           },
           {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg',
+            src: 'https://nerako.co/wp-content/uploads/2022/08/WOOCOMMERCE_Mesa-de-trabajo-1-11-scaled.jpg',
           },
-          {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg',
-          },
+          
         ],
       }
     },
