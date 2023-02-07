@@ -88,3 +88,18 @@ export default {
   }
 };
 </script>
+
+<style>
+.card{
+  margin: 3rem;
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+
+.con{
+  text-align: center;
+  place-content: center;
+  margin: 5rem;
+}
+</style>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="formulario">
     <h3>Formulario</h3>
 
     <div class="card" style="width: 35rem">
@@ -88,4 +88,20 @@ export default {
 
 <style>
 
+  .formulario{
+  margin: 3rem;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  }
+
+  .form-group{
+  text-align: center;
+  }
+  
+  .btn btn-primary{
+  text-align: center;
+  display: flex;
+  place-content: center;
+  }
 </style>
